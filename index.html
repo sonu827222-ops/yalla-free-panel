@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yalla Free Panel</title>
+<style>
+body {
+  background:#101522;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  padding:20px;
+}
+.panel {
+  background:#202b40;
+  padding:20px;
+  border-radius:15px;
+}
+input,button {
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border:0;
+  border-radius:8px;
+  box-sizing:border-box;
+}
+button {
+  background:#168bdb;
+  color:white;
+  font-size:17px;
+}
+</style>
+</head>
+<body>
+<div class="panel">
+<h2>YALLA FREE PANEL</h2>
+<p>All Features Free</p>
+<input id="msg" placeholder="Enter your message">
+<button onclick="showMessage()">Send Text</button>
+<button onclick="showAlphabet()">Alphabet</button>
+<p id="result"></p>
+</div>
+<script>
+function showMessage(){
+ document.getElementById("result").innerText =
+ document.getElementById("msg").value;
+}
+function showAlphabet(){
+ document.getElementById("result").innerText =
+ "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+}
+</script>
+</body>
+</html>
